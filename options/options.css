@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    header h1 {
+        color: #007acc;
+        margin-bottom: 10px;
+    }
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+    .header-buttons button {
+        padding: 10px 15px;
+        font-size: 1rem;
+        color: white;
+        background-color: #007acc;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .header-buttons button:hover {
+            background-color: #005f99;
+        }
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #007acc;
+}
+
+/* Reminder and Task Boxes */
+.reminder-box,
+.task-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .reminder-box h3,
+    .task-box h3 {
+        margin-top: 0;
+        color: #333;
+    }
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+    ul li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+/* Buttons and Inputs */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007acc;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+    button:hover {
+        background-color: #005f99;
+    }
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"] {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.add-reminder,
+.add-task {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 20px;
+}

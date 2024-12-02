@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "LifeReminder",
+  "version": "1.0",
+  "description": "A Chrome extension to track activities and set reminders.",
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "content.js" ]
+    }
+  ],
+  "icons": {
+    "48": "assets/icon.png"
+  },
+  "permissions": [ "alarms", "storage", "contextMenus" ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "assets/icon.png"
+  },
+  "options_page": "options/options.html"
+}

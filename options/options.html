@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeReminder Options</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <header>
+        <h1>LifeReminder</h1>
+        <div class="header-buttons">
+            <button id="settings-btn">Settings</button>
+            <button id="placeholder-btn">Placeholder</button>
+        </div>
+    </header>
+    <main>
+        <!-- Set Reminders Section -->
+        <section id="reminder-settings">
+            <h2>Set Reminders</h2>
+            <div class="reminder-box">
+                <h3>Reminders</h3>
+                <ul id="reminder-list">
+                    <!-- Dynamic list of reminders will appear here -->
+                </ul>
+                <div class="add-reminder">
+                    <label for="new-reminder-name">Reminder Name</label>
+                    <input type="text" id="new-reminder-name" placeholder="Reminder Name">
+                    <label for="new-reminder-interval">Interval (minutes)</label>
+                    <input type="number" id="new-reminder-interval" placeholder="Interval (minutes)" min="1">
+                    <button id="add-reminder-btn">Add Reminder</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Set Tasks Section -->
+        <section id="task-manager">
+            <h2>Set Tasks</h2>
+            <div class="task-box">
+                <h3>Tasks</h3>
+                <ul id="task-list">
+                    <!-- Dynamic list of tasks will appear here -->
+                </ul>
+                <div class="add-task">
+                    <label for="new-task-name">Task Name</label>
+                    <input type="text" id="new-task-name" placeholder="Task Name">
+                    <label for="new-task-datetime">Due Date and Time</label>
+                    <input type="datetime-local" id="new-task-datetime">
+                    <button id="add-task-btn">Add Task</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 LifeReminder. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="options.js"></script>
+</body>
+</html>
